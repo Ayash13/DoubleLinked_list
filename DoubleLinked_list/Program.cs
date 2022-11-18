@@ -99,6 +99,9 @@ namespace DoubleLinked_list
         public bool dellNode(int rollNo)
         {
             Node previous, current;
+            previous = current = null;
+            if (Search(rollNo, ref previous, ref current) == false)
+                return false;
             
         }
 
