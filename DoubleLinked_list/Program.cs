@@ -132,7 +132,15 @@ namespace DoubleLinked_list
 
         public void asCending()
         {
-           
+            if (listEmpty())
+                Console.WriteLine("List is empty");
+            else
+            {
+                Console.WriteLine("Record in the ascending order of" + "Roll number of : ");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.WriteLine(currentNode.noMhs + currentNode.name + "");
+            }
         }
         
     }
