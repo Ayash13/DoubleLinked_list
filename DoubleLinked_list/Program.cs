@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 
 namespace DoubleLinked_list
 {
@@ -167,6 +168,9 @@ namespace DoubleLinked_list
     }
     class Program
     {
-       
+       static void Main(string[]args)
+       {
+           
+       }
     }
 }
