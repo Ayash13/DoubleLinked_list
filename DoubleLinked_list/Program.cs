@@ -142,7 +142,10 @@ namespace DoubleLinked_list
                     Console.WriteLine(currentNode.noMhs + currentNode.name + "");
             }
         }
-        
+        public void descending()
+        {
+            
+        }
     }
     class Program
     {
