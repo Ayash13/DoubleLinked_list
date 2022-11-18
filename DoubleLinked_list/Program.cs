@@ -19,10 +19,17 @@ namespace DoubleLinked_list
     }
     class DoubleLinkedList
     {
- 
+        Node START;
+
+        //constructor
+
+        public void addNode()
+        {
+            
+        }
     }
     class Program
     {
-    
+       
     }
 }
