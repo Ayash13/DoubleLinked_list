@@ -130,6 +130,10 @@ namespace DoubleLinked_list
                 return false;
         }
 
+        public void asCending()
+        {
+           
+        }
         
     }
     class Program
