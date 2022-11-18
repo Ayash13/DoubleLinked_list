@@ -102,7 +102,24 @@ namespace DoubleLinked_list
             previous = current = null;
             if (Search(rollNo, ref previous, ref current) == false)
                 return false;
-            
+            //the begining of data
+            if (current.next == null)
+            {
+                previous.next = null;
+                return true;
+            }
+            //Node between two nodes in the list
+            if(current == START)
+            {
+                START = START.next;
+                if (START != null)
+                    START.prev = null;
+                return true;
+            }
+            //If  deleted is between the list then the following line has executed
+            previous.next = current.next;
+            current.next.prev = previous;
+            return true;
         }
 
         
