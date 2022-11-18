@@ -62,7 +62,31 @@ namespace DoubleLinked_list
                     return;
                 }
             }
-            
+            //On the execution from above for loop, prev and current will point to those node
+            //between which the new node is to be inseretd
+
+            newNode.next = current;
+            newNode.prev = previous;
+
+            //if the node is to be inserted at the end of the list
+            if (current == null) ;
+            {
+                newNode.next = null;
+                previous.next = newNode;
+                return;
+            }
+            newNode.next = START;
+            if (START != null)
+                START.prev = newNode;
+            {
+                newNode.next = null;
+                START = newNode;
+                return;
+            }
+            current.prev = newNode;
+            previous.next = newNode;
+        }
+        
     }
     class Program
     {
