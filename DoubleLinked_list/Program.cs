@@ -144,7 +144,25 @@ namespace DoubleLinked_list
         }
         public void descending()
         {
-            
+            if (listEmpty())
+                Console.WriteLine("List is empty");
+            else
+            {
+                Console.WriteLine("Record in the ascending order of" + "Roll number of : ");
+                Node currentNode;
+                //bring the currentNode to the last Node
+                currentNode = START;
+                while (currentNode.next != null)
+                {
+                    currentNode =  currentNode.next;
+                }
+                //mambaca data dari last node ke first
+                while (currentNode != null)
+                {
+                    Console.WriteLine(currentNode.noMhs + " " + currentNode.name + " ");
+                    currentNode = currentNode.prev;
+                }
+            }
         }
     }
     class Program
