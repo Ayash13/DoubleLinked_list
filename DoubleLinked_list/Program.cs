@@ -96,6 +96,12 @@ namespace DoubleLinked_list
             }
             return (current != null);
         }
+        public bool dellNode(int rollNo)
+        {
+            Node previous, current;
+            
+        }
+
         
     }
     class Program
