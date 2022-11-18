@@ -25,7 +25,15 @@ namespace DoubleLinked_list
 
         public void addNode()
         {
-            
+            int nim;
+            string nm;
+            Console.WriteLine("Enter the roll number of the student : ");
+            nim = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the name of the student : ");
+            nm = Console.ReadLine();
+            Node newNode = new Node();
+            newNode.noMhs = nim;
+            newNode.name = nm;
         }
     }
     class Program
